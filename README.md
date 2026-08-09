@@ -5,6 +5,14 @@ Distribuovaný soubor je [Nekara-ResourcePack-26.1.2.zip](Nekara-ResourcePack-26
 Každý GitHub Release obsahuje tentýž ověřený ZIP jako asset, aby šel bezpečně použít
 v `server.properties` nebo distribuovat launcherem.
 
+## Release 0.7
+
+Release 0.7 obsahuje znovu sestavený a validovaný pack s 14 353 soubory pro Minecraft
+26.1.2. Zachovává vanilla fallbacky a přidává aktuální generované modely vlastních
+zbraní NekaraRPG včetně správného držení obouručního meče v ruce. Dračí mount je
+serverový vanilla Ender Dragon, proto pro něj pack nepřidává klientský mod ani vlastní
+model entity.
+
 ## Obsah a priority
 
 Pack je sestaven pouze z lokálně dodaných zdrojů. Priority jsou pevné:
@@ -23,7 +31,7 @@ textuře ani k dvojité geometrii. Lokální ikony postelí zůstávají zachova
 
 ## NekaraRPG
 
-Resource pack poskytuje pluginové GUI v namespace `nekararpg`. Kontrakt pro budoucí
+Resource pack poskytuje pluginové GUI a modely v namespace `nekararpg`. Kontrakt pro budoucí
 vlastní itemy, zvuky a stabilní ID je v [docs/NEKARARPG_INTEGRATION.md](docs/NEKARARPG_INTEGRATION.md).
 Zatím neexistuje obecný registr custom itemů; dokument definuje bezpečný postup,
 aby se ID ani model-data nekřížily ve chvíli, kdy budou itemy do NekaraRPG přidány.
