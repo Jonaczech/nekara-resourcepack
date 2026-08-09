@@ -29,6 +29,17 @@ Hodnota `custom-model-data` se nesmí znovu použít pro jiný základní materi
 výslovného zápisu do registru. Nové hodnoty se přidělují monotónně v rozsahu
 `260100–260999`, dokud nebude zaveden jiný verzovaný registr.
 
+## Vlastní zbraně v 0.7
+
+NekaraRPG 2.7.0 používá pro vlastní dýky, obouruční meče a kladiva přímo stabilní
+item-model ID v namespace `nekararpg`, například `nekararpg:weapons/greatsword/diamond`.
+Nejde o nové `custom-model-data`: plugin nastavuje item model přímo a pack zachovává
+vanilla fallback pro všechny běžné předměty. Modely obouručních mečů obsahují
+samostatnou variantu pro držení v ruce.
+
+`Dračí pouto` nepřidává vlastní asset entity. Drak je serverem synchronizovaný vanilla
+Ender Dragon, takže jej klient vykreslí i bez Fabricu nebo dalšího modelu v packu.
+
 ## Současný mount whistle
 
 NekaraRPG již vytváří GOAT_HORN s `custom-model-data: 260102` v konfiguraci
