@@ -24,6 +24,7 @@ zdroj pravdy pro serverovou konfiguraci, pluginový persistent tag a resource-pa
 | Stable item ID | Base material | Custom model data | Status | Poznámka |
 | --- | --- | ---: | --- | --- |
 | `nekararpg:mounts/whistle` | `GOAT_HORN` | `260102` | reserved | Hodnota je aktuálně v `mounts/config.yml`; viz níže. |
+| `nekararpg:runes/placeholder` | `AMETHYST_SHARD` | — | implemented | Společný namespaced model pro všechny fáze run; identitu určuje PDC. |
 
 Hodnota `custom-model-data` se nesmí znovu použít pro jiný základní materiál bez
 výslovného zápisu do registru. Nové hodnoty se přidělují monotónně v rozsahu
@@ -66,3 +67,11 @@ stav používání itemu. Selektor proto musí tento fallback zachovat.
 
 Server neumí ověřit, zda klient skutečně obsahuje lokální custom texturu nebo zvuk.
 Proto musí být pluginová konfigurace a resource-pack release publikovány koordinovaně.
+
+## NekaraMMO 0.3.0
+
+NekaraMMO používá oddělený namespace `nekarammo`; nesmí přebírat stabilní ID namespace
+`nekararpg`. Release 0.8 obsahuje modely a textury pro Iron/Golden/Diamond/Netherite
+dýky, rapíry a kladiva a pro základní Hůl mystika. Hůl má inventářový model
+`nekarammo:weapons/staff/initiate` a samostatný model držení
+`nekarammo:weapons/staff/initiate_in_hand`. Copper weapon modely se záměrně nevydávají.
